@@ -2,25 +2,25 @@
 
 This is a clone of Tetris game implemented using Node.js for backend, and React.js for frontend.
 
-Link: 
+Link: https://KuanKongy.github.io/Multiplayer-Tetris
 
 ### Included features
-Playfiled: 10 cells wide and 20 cells tall.
-Super Rotation System: visual rotation only without kicks.
-Tetromino starting position: first two rows.
-Lock Down: piece has 0.5 seconds after landing to slide before it locks down.
-Piece preview: next queue with three next blocks
-Hold: active piece can be inserted into hold queue. If there's already a piece, a current piece will be swapped. Only one piece can be in the hold queue. Only one swap can be done until another piece locks down.
-Ghost piece: position of piece if hard dropped, 0.5 seconds of sliding time applies.
-Levels, scoring: determined only by lines cleared. After each level, pieces fall faster, but sliding time doesn't change.
+**Playfiled**: 10 cells wide and 20 cells tall.  
+**Super Rotation System**: visual rotation only without kicks.  
+**Tetromino starting position**: first two rows.  
+**Lock Down**: piece has 0.5 seconds after landing to slide before it locks down.  
+**Piece preview**: next queue with three next blocks
+Hold: active piece can be inserted into hold queue. If there's already a piece, a current piece will be swapped. Only one piece can be in the hold queue. Only one swap can be done until another piece locks down.  
+**Ghost piece**: position of piece if hard dropped, 0.5 seconds of sliding time applies.  
+**Levels, scoring**: determined only by lines cleared. After each level, pieces fall faster, but sliding time doesn't change.  
 
 ### Controls
-Left and right arrow keys: Piece shifting
-Up arrow key: Rotating 90 degrees clockwise
-Down arrow key: Soft drop
-Space bar: Hard drop
-C key: Hold piece
-X key: Rotating 90 degrees counterclockwise
+**Left and right arrow keys**: Piece shifting  
+**Up arrow key**: Rotating 90 degrees clockwise  
+**Down arrow key**: Soft drop  
+**Space bar**: Hard drop  
+**C key**: Hold piece  
+**X key**: Rotating 90 degrees counterclockwise  
 
 ## Available Scripts
 
