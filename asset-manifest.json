@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Multiplayer-Tetris/static/css/main.326d4d89.css",
+    "main.js": "/Multiplayer-Tetris/static/js/main.1fd5d0e0.js",
+    "index.html": "/Multiplayer-Tetris/index.html",
+    "main.326d4d89.css.map": "/Multiplayer-Tetris/static/css/main.326d4d89.css.map",
+    "main.1fd5d0e0.js.map": "/Multiplayer-Tetris/static/js/main.1fd5d0e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.326d4d89.css",
+    "static/js/main.1fd5d0e0.js"
+  ]
+}
