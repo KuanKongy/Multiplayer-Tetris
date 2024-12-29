@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/Multiplayer-Tetris/static/css/main.326d4d89.css",
-    "main.js": "/Multiplayer-Tetris/static/js/main.1fd5d0e0.js",
-    "index.html": "/Multiplayer-Tetris/index.html",
-    "main.326d4d89.css.map": "/Multiplayer-Tetris/static/css/main.326d4d89.css.map",
-    "main.1fd5d0e0.js.map": "/Multiplayer-Tetris/static/js/main.1fd5d0e0.js.map"
+    "main.css": "/static/css/main.eae6267b.css",
+    "main.js": "/static/js/main.c5fe0efb.js",
+    "static/media/Survival.jpg": "/static/media/Survival.aada2e0b0a0e7302b195.jpg",
+    "static/media/Pixel-LCD-7.woff": "/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
+    "index.html": "/index.html",
+    "main.eae6267b.css.map": "/static/css/main.eae6267b.css.map",
+    "main.c5fe0efb.js.map": "/static/js/main.c5fe0efb.js.map"
   },
   "entrypoints": [
-    "static/css/main.326d4d89.css",
-    "static/js/main.1fd5d0e0.js"
+    "static/css/main.eae6267b.css",
+    "static/js/main.c5fe0efb.js"
   ]
 }
