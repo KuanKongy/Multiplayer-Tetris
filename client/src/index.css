@@ -1,0 +1,139 @@
+.board {
+    user-select: none;
+    margin: auto;
+    grid-area: game;
+    background-color: white;
+}
+
+.board.Local {
+    border: 5px solid gray;
+}
+
+.board.Opp {
+    border: 5px solid rgba(128, 128, 128, .65);
+}
+
+.row {
+    display: flex;
+}
+
+.upcoming {
+    width: 180px;
+    height: 240px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.hold {
+    width: 180px;
+    height: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.cell {
+    width: 30px;
+    aspect-ratio: 1;
+    margin: 1px;
+    border-radius: 15%;
+}
+
+.cell.hidden {
+    visibility: hidden;
+}
+
+.cell.Empty {
+    background-color: lightgray;
+}
+
+.cell.Ghost {
+    background-color: gray;
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.I {
+    background-color: rgb(0, 255, 255);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.J {
+    background-color: rgb(0, 0, 255);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.L {
+    background-color: rgb(255, 127, 0);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.O {
+    background-color: rgb(255, 255, 0);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.S {
+    background-color: rgb(0, 255, 0);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.Z {
+    background-color: rgb(255, 0, 0);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+.cell.T {
+    background-color: rgb(127, 0, 127);
+    border-left: 5px solid rgba(255, 255, 255, .3);
+    border-top: 5px solid rgba(255, 255, 255, .3);
+    border-right: 5px solid rgba(0, 0, 0, .3);
+    border-bottom: 5px solid rgba(0, 0, 0, .3);
+}
+
+html {
+    box-sizing: border-box;
+    height: 100vh;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("./assets/img/Survival.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+@font-face {
+    font-family: "Pixel";
+    src: url("./assets/font/Pixel-LCD-7.woff") format("woff");
+}
