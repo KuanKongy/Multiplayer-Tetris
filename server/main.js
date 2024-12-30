@@ -4,10 +4,10 @@ const socket = require("socket.io");
 const Session = require("./session");
 const Client = require("./client");
 
-const {
-  getHighscoreList,
-  updateHighscoreList
-} = require("./firebase/firebase");
+// const {
+//   getHighscoreList,
+//   updateHighscoreList
+// } = require("./firebase/firebase");
 
 const CLIENT_LIMIT = 2;
 const port = process.env.PORT || 3000;
@@ -24,12 +24,12 @@ io.on("connect", socket => {
   console.log("Connected to socket: ", socket.id);
   const client = createClient(socket);
 
-  getHighscoreList().then(data => {
-    client.send({
-      type: "highscore-list",
-      list: data
-    });
-  });
+  // getHighscoreList().then(data => {
+  //   client.send({
+  //     type: "highscore-list",
+  //     list: data
+  //   });
+  // });
   
   socket.on("message", msg => {
     const data = JSON.parse(msg);
