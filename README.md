@@ -3,11 +3,12 @@
 This is a clone of Tetris game designed using React, Node.js. Server is implemented using Express.js, Socket.IO. Highscore database uses Firebase Firestore.  
 Styling was done using Styled Components.
 
-Link for single-player: https://KuanKongy.github.io/Multiplayer-Tetris
+Link to play tetris (singleplayer always active): https://KuanKongy.github.io/Multiplayer-Tetris
+Link to start server for multiplayer: https://multiplayer-tetris-bd80c58c0ffa.herokuapp.com/
 
 ## How to Play
-Use provided link or download the project and run in console "npm start" in both client and server directories. If you want to play locally, make sure you are connected to the same network.  
-When the game starts you get a unique url that identifies your game session, (e.g. "http://localhost:3001/#oyxadn" or ""), if you share your url or open it up in a new window several tetris games should be in the same session. Game session has default limit of 2 players, expandable in main.js in server folder.
+To playe globally, use provided links. To play locally, download the project, uncomment line 22 in TetrisManager.jsx, and run in console "npm start" in both client and server directories.  
+When the game starts you get a unique url that identifies your game session, (e.g. "http://localhost:3001/#oyxadn" or "https://multiplayer-tetris-bd80c58c0ffa.herokuapp.com/#oyxadn"), if you share your url or open it up in a new window, several Tetris games should be in the same session. Game session has default limit of 2 players; which is expandable in main.js in server folder.
 
 ### Included features
 **Playfiled**: 10 cells wide and 20 cells tall.  

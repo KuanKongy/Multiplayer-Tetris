@@ -7,9 +7,9 @@ const Client = require("./client");
 // const {
 //   getHighscoreList,
 //   updateHighscoreList
-// } = require("./firebase/firebase");
+// } = require("./firebase/firebase"); //firebase got blocked by google cloud security system; on maintenance
 
-const CLIENT_LIMIT = 2;
+const CLIENT_LIMIT = 2; //change this to increase max players
 const port = process.env.PORT || 3000;
 const sessions = new Map();
 
@@ -66,7 +66,7 @@ io.on("connect", socket => {
         client.broadcast(data);
         break;
       case "update-highscore":
-        updateHighscoreList(data.list);
+        //updateHighscoreList(data.list);
         const package = {
           type: "highscore-list",
           list: data.list
