@@ -10,6 +10,7 @@ import Display from "../Display/Display";
 import { StyledTetrisWrapper, StyledTetris } from "./Tetris.styles";
 import StartButton from "../StartButton/StartButton";
 import HoldBlocks from "../NextTetromino/HoldBlocks";
+import BackgroundMusic from "../BackgroundMusic/BackgroundMusic";
 
 const Tetris = ({
   events,
@@ -113,6 +114,7 @@ const Tetris = ({
       </aside>
 
       <Board className="stage" currentBoard={renderedBoard} boardClass={BoardType.Local}/>
+      <BackgroundMusic play={isPlaying} />
 
       <aside className="information">
           {isPlaying ? (

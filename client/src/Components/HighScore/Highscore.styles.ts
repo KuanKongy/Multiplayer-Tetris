@@ -18,5 +18,6 @@ export const StyledHighscore = styled.div`
 export const PlayerScore = styled.div`
   display: flex;
   justify-content: space-between;
+  gap: .5rem;
   margin: .5rem .5rem 0 .5rem;
 `

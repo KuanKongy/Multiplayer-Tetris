@@ -3,11 +3,12 @@ const socket = require("socket.io");
 
 const Session = require("./session");
 const Client = require("./client");
+require('dotenv').config();
 
-// const {
-//   getHighscoreList,
-//   updateHighscoreList
-// } = require("./firebase/firebase"); //firebase got blocked by google cloud security system; on maintenance
+const {
+  getHighscoreList,
+  updateHighscoreList
+} = require("./firebase/firebase");
 
 const CLIENT_LIMIT = 2; //change this to increase max players
 const port = process.env.PORT || 3000;
@@ -24,12 +25,12 @@ io.on("connect", socket => {
   console.log("Connected to socket: ", socket.id);
   const client = createClient(socket);
 
-  // getHighscoreList().then(data => {
-  //   client.send({
-  //     type: "highscore-list",
-  //     list: data
-  //   });
-  // });
+  getHighscoreList().then(data => {
+    client.send({
+      type: "highscore-list",
+      list: data
+    });
+  });
   
   socket.on("message", msg => {
     const data = JSON.parse(msg);
@@ -66,7 +67,7 @@ io.on("connect", socket => {
         client.broadcast(data);
         break;
       case "update-highscore":
-        //updateHighscoreList(data.list);
+        updateHighscoreList(data.list);
         const package = {
           type: "highscore-list",
           list: data.list
